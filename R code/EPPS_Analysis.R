@@ -18,12 +18,12 @@ numCores <- detectCores()
 registerDoParallel(numCores)
 
 # Set up the path and source the function for one replication
-path = "/lustre03/project/6049193/ubclxing/EPPS_April2021/"
+path = "/ubclxing/EPPS_April2021/"
 setwd(path)
 source("OneReplicate.R")
 
 # Load Data and Winsorize the outcome variable due to its long tails 
-mydata <- get(load("Data/LHS_5000SNP.rda"))
+mydata <- get(load("Data/LHS_5000SNP_DataAnalysis.rda"))
 dim(mydata)
 #[1] 1774 5004
 

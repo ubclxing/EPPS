@@ -28,7 +28,7 @@ registerDoParallel(numCores)
 path = "./ubclxing/EPPS_April2021/"
 setwd(path)
 source("PowerFunction.R")
-mydata <- get(load("Data/LHS_5000SNP_DataSS.rda"))
+mydata <- get(load("Data/LHS_5000SNP_DataAnalysis.rda"))
 dim(mydata)
 #[1] 1774 5004
 
